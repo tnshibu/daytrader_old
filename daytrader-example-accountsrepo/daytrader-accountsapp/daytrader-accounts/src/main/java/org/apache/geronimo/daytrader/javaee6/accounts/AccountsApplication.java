@@ -76,8 +76,8 @@ public class AccountsApplication extends SpringBootServletInitializer {
 				// Set Database Properties
 				accountsDataSource.setProperty("driverClassName", driverClassName);
 				accountsDataSource.setProperty("url", url);
-				accountsDataSource.setProperty("username", username);
-				accountsDataSource.setProperty("password", password);
+				//accountsDataSource.setProperty("username", username);
+				//accountsDataSource.setProperty("password", password);
 				accountsDataSource.setProperty("maxActive", "100");
 				accountsDataSource.setProperty("maxIdle", "30");
 				accountsDataSource.setProperty("maxWait", "10000");

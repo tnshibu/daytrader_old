@@ -868,6 +868,11 @@ public class AccountsService
         }
         TradeConfig.setPublishQuotePriceChange(false);
         initialized = true;
+        try {
+            KeySequenceDirect.initialize(datasource.getConnection());
+        } catch(java.sql.SQLException sqle) {
+        	Log.error("AccountsService:init() - error on trying to KeySequenceDirect.initialize()",sqle);
+        }
     }
 
     public static void destroy() {

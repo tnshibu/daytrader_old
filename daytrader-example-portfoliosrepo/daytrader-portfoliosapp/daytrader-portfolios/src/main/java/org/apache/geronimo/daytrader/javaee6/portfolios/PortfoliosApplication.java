@@ -77,8 +77,8 @@ public class PortfoliosApplication extends SpringBootServletInitializer {
 				// Set Database Properties
 				portfoliosDataSource.setProperty("driverClassName", driverClassName);
 				portfoliosDataSource.setProperty("url", url);
-				portfoliosDataSource.setProperty("username", username);
-				portfoliosDataSource.setProperty("password", password);
+				//portfoliosDataSource.setProperty("username", username);
+				//portfoliosDataSource.setProperty("password", password);
 				portfoliosDataSource.setProperty("maxActive", "100");
 				portfoliosDataSource.setProperty("maxIdle", "30");
 				portfoliosDataSource.setProperty("maxWait", "10000");
